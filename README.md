@@ -1,12 +1,9 @@
-<h1 align="ceter">为ParaView增添几种colormap及定制易用colormap</h1>
-
-abele_n@163.com
-
-2015-12-06
-
-这个是我给ParaView的ColorMap增加的三种颜色配置。They are my three extensional colormaps for Paraview.
-
-##如果有什么想法或者错误欢迎大家交流，谢谢！
+<h1 align="ceter">为ParaView增添三种colormap及定制易用colormap</h1>
+---
+###abele_n@163.com
+###2015-12-06
+###这个是我给ParaView的ColorMap增加的三种颜色配置。They are my three extensional colormaps for Paraview.
+###如果有什么想法或者错误欢迎大家交流，谢谢！
 
 
 ##【使用说明(How to use)】
@@ -17,52 +14,64 @@ abele_n@163.com
 <img src="https://github.com/weiminghu07/colormap/blob/master/pics/1.png" alt=""/><br />
 （第一步 点击Edit）
 </div>
-接着我们看到右手边出现Color Map Edit的窗口，如下图所示：
+
+接着我们看到右手边出现Color Map Editor的窗口，如下图所示：
 <div align="center">
 <img src="https://github.com/weiminghu07/colormap/blob/master/pics/2.png" alt=""/><br />
 （第二步 点击带有爱心文件夹的图标Preset）
 </div>
+
 点击带有爱心文件夹的图标Preset,然后会弹出一个窗口，如图所示（Then pop on a window）:
 <div align="center">
 <img src="https://github.com/weiminghu07/colormap/blob/master/pics/3.png" alt=""/><br />
 （第三步 点击import）
 </div>
+
 然后点击import，随后出现下图：
 <div align="center">
 <img src="https://github.com/weiminghu07/colormap/blob/master/pics/4.png" alt=""/><br />
 （第四步 找到你前面拷贝的文件，点击ok）
 </div>
+
 找到前面你存放的文件，然后选中，点击ok即可输入（注意ParaView不识别中文）。
 ok之后出现下图：
 <div align="center">
 <img src="https://github.com/weiminghu07/colormap/blob/master/pics/5.png" alt=""/><br />
 （第五步 点击Apply）
 </div>
-最后就出现了下图：
+
+点击Apply，最后就出现了下图：
 <div align="center">
 <img src="https://github.com/weiminghu07/colormap/blob/master/pics/colormapformax.png" alt=""/><br />
 （第六步 最终效果图）
 </div>
+
 我们可以通过Color Map Edit窗口右上角的带e的彩色按钮（Edit Color Legend Parameters）调节Legend参数。
 如下图所示：
 <div align="center">
 <img src="https://github.com/weiminghu07/colormap/blob/master/pics/6.png" alt=""/><br />
 （Legend参数设置）
 </div>
+
 我们和tecplot的效果比较一下：
 <div align="center">
 <img src="https://github.com/weiminghu07/colormap/blob/master/pics/tecplot.png" alt=""/><br />
 （tecplot效果图）
 </div>
+
 我们可以看到，ParaView的每一层的值不对应，软件自带的颜色也是一样的。我不知道怎么解决，
 如果哪位仁兄可以解决的话，希望不惜赐教。 
 
+
+##我的三种颜色配置效果图
+-----
 ###colormax.xml focus on Maximum
 效果图如下：
 <div align="center">
-<img src="https://github.com/weiminghu07/colormap/blob/master/pics/colormapmax.png" alt=""/><br />
+<img src="https://github.com/weiminghu07/colormap/blob/master/pics/colormapformax.png" alt=""/><br />
 （colormax.xml显示样式——关注最大值）
 </div>
+
 
 ###colorminandmax.xml focus on both Minimum and Maximum
 效果图如下所示：
@@ -71,6 +80,7 @@ ok之后出现下图：
 （colorminandmax.xml显示样式——关注最大值最小值）
 </div>
 
+
 ###colormin.xml focus on Minimum
 效果图如下所示：
 <div align="center">
@@ -78,12 +88,15 @@ ok之后出现下图：
 （colormin.xml显示样式——关注最小值）
 </div>
 
+
 ##【定制易用好看colormap(How to customize beautiful colormap)】
 -----
 如果有兴趣自己定义颜色组合的可以看看下面的内容：
+
 ###ParaView的ColorMap
 ParaView支持的ColorMap文件格式有.xml（主要有matplotlib）和另一种Matlab格式的，因为ParaView默认的是.xml，
 所以我只以.xml格式说明。ParaView的ColorMaps.xml文件放在lib/paraview-4.4/site-packages/paraview/目录下。
+
 ###ColorMap的xml格式
 ```
 <ColorMaps>
@@ -187,6 +200,7 @@ ParaView的连续显示还可以，所以我没我有再弄连续的颜色配置
     </ColorMap>
 </ColorMaps>
 ```
+
 
 ##小结
 -----
